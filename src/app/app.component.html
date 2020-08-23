@@ -1,0 +1,9 @@
+  <h3>SpaceX Launch Programs</h3>
+    <div class="main">
+      <div class="filterWrapper">
+        <p>Launch year</p>
+        <hr>
+            <app-filter (emitFilterData)="setFilterData($event)"></app-filter>
+      </div>
+        <app-home [initialMissionList]="filterData"></app-home>
+    </div>

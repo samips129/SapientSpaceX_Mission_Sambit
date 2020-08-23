@@ -1,0 +1,32 @@
+<div>
+ <div class="row">
+      <div *ngFor='let year of launchYears' class="btn-group btn-group-toggle" data-toggle="buttons">
+  <label class="btn btn-secondary active">
+  <input type="radio" name="year" value="year" (click)="setLaunchYear(year)" ngModel> {{year}}
+  </label>
+</div>
+    </div> <br>
+ <h3>Successful Launch</h3>
+ <div class="row">
+      <div class="btn-group btn-group-toggle" data-toggle="buttons">
+  <label class="btn btn-secondary active">
+  <input type="radio" name="launchDetails" value="0" (click)="getLaunchDetails(true)" ngModel> True
+  </label>
+<label class="btn btn-secondary active">
+  <input type="radio" name="launchDetails" value="0" (click)="getLaunchDetails(false)" ngModel>False
+  </label>
+</div>
+    </div> <br>
+ <h3>Successful Landing</h3>
+<div class="row">
+      <div class="btn-group btn-group-toggle" data-toggle="buttons">
+  <label class="btn btn-secondary active">
+  <input type="radio" name="landingDetails" value="0" (click)="getLandingDetails(true)" ngModel> True
+  </label>
+<label class="btn btn-secondary active">
+  <input type="radio" name="landingDetails" value="0" (click)="getLandingDetails(false)" ngModel>False
+  </label>
+</div>
+    </div>
+
+</div>

@@ -1,0 +1,12 @@
+<div class="container cardC" *ngFor='let mission of initialMissionList'>
+ <div class="card">
+  <img class="card-img-top" src="{{mission.links.mission_patch_small}}" alt="{{mission.mission_name}}">
+  <div class="card-body">
+    <h5 class="card-title">{{mission.mission_name}} #{{mission.flight_number}}</h5>
+    <p class="card-text">Misson Ids: </p>
+      <p class="card-text">Launch Year: {{mission.launch_date_local | date : 'yyyy'}}</p>
+        <p class="card-text">Successful launch: {{mission.launch_success}}</p>
+            <p class="card-text">Successful landing: {{mission.launch_success}}</p>
+  </div>
+</div>
+</div>
