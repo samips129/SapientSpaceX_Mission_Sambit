@@ -11,7 +11,8 @@
     "dev:ssr": "ng run angular-ssr-example:serve-ssr",
     "serve:ssr": "node dist/angular-ssr-example/server/main.js",
     "build:ssr": "ng build --prod && ng run angular-ssr-example:server:production",
-    "prerender": "ng run angular-ssr-example:prerender"
+    "prerender": "ng run angular-ssr-example:prerender",
+     "postinstall": "ng build --aot --prod"
   },
   "private": true,
   "dependencies": {
